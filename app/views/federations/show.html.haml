@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @federation.name
+%p
+  %b Foundation date:
+  = @federation.foundation_date
+
+= link_to 'Edit', edit_federation_path(@federation)
+\|
+= link_to 'Back', federations_path

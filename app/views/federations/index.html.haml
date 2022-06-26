@@ -1,0 +1,23 @@
+%h1 Listing federations
+
+%table
+  %thead
+    %tr
+      %th Name
+      %th Foundation date
+      %th
+      %th
+      %th
+
+  %tbody
+    - @federations.each do |federation|
+      %tr
+        %td= federation.name
+        %td= federation.foundation_date
+        %td= link_to 'Show', federation
+        %td= link_to 'Edit', edit_federation_path(federation)
+        %td= link_to 'Destroy', federation, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Federation', new_federation_path
