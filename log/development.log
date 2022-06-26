@@ -479,3 +479,626 @@ FOREIGN KEY ("club_id")
   [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(829307114278137390)[0m
   [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/federations" for ::1 at 2022-06-26 12:32:30 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FederationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering federations/index.html.haml within layouts/application
+  [1m[36mFederation Load (4.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations"[0m
+  ↳ app/views/federations/index.html.haml:13
+  Rendered federations/index.html.haml within layouts/application (Duration: 9.8ms | Allocations: 12392)
+  Rendered layout layouts/application.html.erb (Duration: 29.1ms | Allocations: 47424)
+Completed 200 OK in 42ms (Views: 30.6ms | ActiveRecord: 4.0ms | Allocations: 52706)
+
+
+Started GET "/federations/new" for ::1 at 2022-06-26 12:32:33 -0500
+Processing by FederationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering federations/new.html.haml within layouts/application
+  Rendered federations/_form.html.haml (Duration: 67.9ms | Allocations: 28829)
+  Rendered federations/new.html.haml within layouts/application (Duration: 72.1ms | Allocations: 31412)
+  Rendered layout layouts/application.html.erb (Duration: 73.7ms | Allocations: 33648)
+Completed 200 OK in 87ms (Views: 74.5ms | ActiveRecord: 3.9ms | Allocations: 38338)
+
+
+Started POST "/federations" for ::1 at 2022-06-26 12:35:01 -0500
+Processing by FederationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "federation"=>{"name"=>"Dimayor", "foundation_date(1i)"=>"2017", "foundation_date(2i)"=>"1", "foundation_date(3i)"=>"1"}, "commit"=>"Create Federation"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/federations_controller.rb:27:in `block in create'
+  [1m[36mFederation Create (1.2ms)[0m  [1m[32mINSERT INTO "federations" ("name", "foundation_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Dimayor"], ["foundation_date", "2017-01-01"], ["created_at", "2022-06-26 17:35:01.409280"], ["updated_at", "2022-06-26 17:35:01.409280"]]
+  ↳ app/controllers/federations_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/federations_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/federations/1
+Completed 302 Found in 8ms (ActiveRecord: 1.9ms | Allocations: 2892)
+
+
+Started GET "/federations/1" for ::1 at 2022-06-26 12:35:01 -0500
+Processing by FederationsController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mFederation Load (0.3ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/federations_controller.rb:63:in `set_federation'
+  Rendering layout layouts/application.html.erb
+  Rendering federations/show.html.haml within layouts/application
+  Rendered federations/show.html.haml within layouts/application (Duration: 4.1ms | Allocations: 4172)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 6419)
+Completed 200 OK in 12ms (Views: 7.2ms | ActiveRecord: 0.5ms | Allocations: 8960)
+
+
+Started GET "/federations/1/edit" for ::1 at 2022-06-26 12:35:05 -0500
+Processing by FederationsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFederation Load (0.3ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/federations_controller.rb:63:in `set_federation'
+  Rendering layout layouts/application.html.erb
+  Rendering federations/edit.html.haml within layouts/application
+  Rendered federations/_form.html.haml (Duration: 15.1ms | Allocations: 7867)
+  Rendered federations/edit.html.haml within layouts/application (Duration: 20.1ms | Allocations: 10810)
+  Rendered layout layouts/application.html.erb (Duration: 23.9ms | Allocations: 13038)
+Completed 200 OK in 28ms (Views: 24.5ms | ActiveRecord: 0.3ms | Allocations: 13836)
+
+
+Started GET "/federations" for ::1 at 2022-06-26 12:35:07 -0500
+Processing by FederationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering federations/index.html.haml within layouts/application
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations"[0m
+  ↳ app/views/federations/index.html.haml:13
+  Rendered federations/index.html.haml within layouts/application (Duration: 2.2ms | Allocations: 739)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 3126)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.2ms | Allocations: 3392)
+
+
+Started GET "/federations/1/edit" for ::1 at 2022-06-26 12:35:12 -0500
+Processing by FederationsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFederation Load (0.3ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/federations_controller.rb:63:in `set_federation'
+  Rendering layout layouts/application.html.erb
+  Rendering federations/edit.html.haml within layouts/application
+  Rendered federations/_form.html.haml (Duration: 19.5ms | Allocations: 7909)
+  Rendered federations/edit.html.haml within layouts/application (Duration: 19.9ms | Allocations: 8047)
+  Rendered layout layouts/application.html.erb (Duration: 27.2ms | Allocations: 10265)
+Completed 200 OK in 30ms (Views: 27.6ms | ActiveRecord: 0.3ms | Allocations: 10995)
+
+
+Started PATCH "/federations/1" for ::1 at 2022-06-26 12:35:16 -0500
+Processing by FederationsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "federation"=>{"name"=>"Dimayor", "foundation_date(1i)"=>"2012", "foundation_date(2i)"=>"1", "foundation_date(3i)"=>"1"}, "commit"=>"Update Federation", "id"=>"1"}
+  [1m[36mFederation Load (0.3ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/federations_controller.rb:63:in `set_federation'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/federations_controller.rb:40:in `block in update'
+  [1m[36mFederation Update (0.4ms)[0m  [1m[33mUPDATE "federations" SET "foundation_date" = $1, "updated_at" = $2 WHERE "federations"."id" = $3[0m  [["foundation_date", "2012-01-01"], ["updated_at", "2022-06-26 17:35:16.258261"], ["id", 1]]
+  ↳ app/controllers/federations_controller.rb:40:in `block in update'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/federations_controller.rb:40:in `block in update'
+Redirected to http://localhost:3000/federations/1
+Completed 302 Found in 14ms (ActiveRecord: 1.6ms | Allocations: 2707)
+
+
+Started GET "/federations/1" for ::1 at 2022-06-26 12:35:16 -0500
+Processing by FederationsController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/federations_controller.rb:63:in `set_federation'
+  Rendering layout layouts/application.html.erb
+  Rendering federations/show.html.haml within layouts/application
+  Rendered federations/show.html.haml within layouts/application (Duration: 1.1ms | Allocations: 283)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 2503)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.2ms | Allocations: 3234)
+
+
+Started GET "/federations/1/edit" for ::1 at 2022-06-26 12:35:17 -0500
+Processing by FederationsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/federations_controller.rb:63:in `set_federation'
+  Rendering layout layouts/application.html.erb
+  Rendering federations/edit.html.haml within layouts/application
+  Rendered federations/_form.html.haml (Duration: 18.6ms | Allocations: 7916)
+  Rendered federations/edit.html.haml within layouts/application (Duration: 19.9ms | Allocations: 8054)
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 10272)
+Completed 200 OK in 27ms (Views: 25.2ms | ActiveRecord: 0.2ms | Allocations: 10999)
+
+
+Started PATCH "/federations/1" for ::1 at 2022-06-26 12:35:24 -0500
+Processing by FederationsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "federation"=>{"name"=>"Dimayor", "foundation_date(1i)"=>"2007", "foundation_date(2i)"=>"1", "foundation_date(3i)"=>"1"}, "commit"=>"Update Federation", "id"=>"1"}
+  [1m[36mFederation Load (0.6ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/federations_controller.rb:63:in `set_federation'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/federations_controller.rb:40:in `block in update'
+  [1m[36mFederation Update (0.5ms)[0m  [1m[33mUPDATE "federations" SET "foundation_date" = $1, "updated_at" = $2 WHERE "federations"."id" = $3[0m  [["foundation_date", "2007-01-01"], ["updated_at", "2022-06-26 17:35:24.953332"], ["id", 1]]
+  ↳ app/controllers/federations_controller.rb:40:in `block in update'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/federations_controller.rb:40:in `block in update'
+Redirected to http://localhost:3000/federations/1
+Completed 302 Found in 11ms (ActiveRecord: 1.7ms | Allocations: 2651)
+
+
+Started GET "/federations/1" for ::1 at 2022-06-26 12:35:24 -0500
+Processing by FederationsController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mFederation Load (0.3ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/federations_controller.rb:63:in `set_federation'
+  Rendering layout layouts/application.html.erb
+  Rendering federations/show.html.haml within layouts/application
+  Rendered federations/show.html.haml within layouts/application (Duration: 0.8ms | Allocations: 282)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 2501)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.3ms | Allocations: 3231)
+
+
+Started GET "/federations" for ::1 at 2022-06-26 12:35:28 -0500
+Processing by FederationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering federations/index.html.haml within layouts/application
+  [1m[36mFederation Load (0.3ms)[0m  [1m[34mSELECT "federations".* FROM "federations"[0m
+  ↳ app/views/federations/index.html.haml:13
+  Rendered federations/index.html.haml within layouts/application (Duration: 2.4ms | Allocations: 735)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 3112)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.3ms | Allocations: 3377)
+
+
+Started GET "/clubs" for ::1 at 2022-06-26 12:43:21 -0500
+Processing by ClubsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/index.html.haml within layouts/application
+  [1m[36mClub Load (1.4ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  ↳ app/views/clubs/index.html.haml:14
+  Rendered clubs/index.html.haml within layouts/application (Duration: 24.2ms | Allocations: 10011)
+  Rendered layout layouts/application.html.erb (Duration: 26.8ms | Allocations: 12419)
+Completed 200 OK in 50ms (Views: 40.8ms | ActiveRecord: 9.3ms | Allocations: 15259)
+
+
+Started GET "/clubs/new" for ::1 at 2022-06-26 12:43:22 -0500
+Processing by ClubsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/new.html.haml within layouts/application
+  [1m[36mFederation Load (0.6ms)[0m  [1m[34mSELECT "federations".* FROM "federations"[0m
+  ↳ app/views/clubs/_form.html.haml:9
+  Rendered clubs/_form.html.haml (Duration: 26.5ms | Allocations: 16654)
+  Rendered clubs/new.html.haml within layouts/application (Duration: 31.3ms | Allocations: 19239)
+  Rendered layout layouts/application.html.erb (Duration: 33.4ms | Allocations: 21489)
+Completed 200 OK in 44ms (Views: 33.4ms | ActiveRecord: 5.5ms | Allocations: 24665)
+
+
+Started POST "/clubs" for ::1 at 2022-06-26 12:43:45 -0500
+Processing by ClubsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "club"=>{"name"=>"Atletico Nacional", "foundation_date(1i)"=>"2017", "foundation_date(2i)"=>"1", "foundation_date(3i)"=>"1", "federation_id"=>"1"}, "commit"=>"Create Club"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/clubs_controller.rb:27:in `block in create'
+  [1m[36mFederation Load (0.3ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/clubs_controller.rb:27:in `block in create'
+  [1m[36mClub Create (0.9ms)[0m  [1m[32mINSERT INTO "clubs" ("name", "foundation_date", "federation_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Atletico Nacional"], ["foundation_date", "2017-01-01"], ["federation_id", 1], ["created_at", "2022-06-26 17:43:45.503970"], ["updated_at", "2022-06-26 17:43:45.503970"]]
+  ↳ app/controllers/clubs_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/clubs_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/clubs/1
+Completed 302 Found in 29ms (ActiveRecord: 1.8ms | Allocations: 7766)
+
+
+Started GET "/clubs/1" for ::1 at 2022-06-26 12:43:45 -0500
+Processing by ClubsController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mClub Load (0.3ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/clubs_controller.rb:63:in `set_club'
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/show.html.haml within layouts/application
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/show.html.haml:11
+  Rendered clubs/show.html.haml within layouts/application (Duration: 5.0ms | Allocations: 5384)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 7614)
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 0.5ms | Allocations: 8970)
+
+
+Started GET "/clubs/1" for ::1 at 2022-06-26 12:44:12 -0500
+Processing by ClubsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClub Load (0.4ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/clubs_controller.rb:63:in `set_club'
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/show.html.haml within layouts/application
+  [1m[36mFederation Load (0.4ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/show.html.haml:11
+  Rendered clubs/show.html.haml within layouts/application (Duration: 9.5ms | Allocations: 5444)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 7886)
+Completed 200 OK in 23ms (Views: 18.7ms | ActiveRecord: 0.8ms | Allocations: 9300)
+
+
+Started GET "/clubs/1" for ::1 at 2022-06-26 12:44:13 -0500
+Processing by ClubsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClub Load (0.5ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/clubs_controller.rb:63:in `set_club'
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/show.html.haml within layouts/application
+  [1m[36mFederation Load (0.3ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/show.html.haml:11
+  Rendered clubs/show.html.haml within layouts/application (Duration: 3.0ms | Allocations: 913)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 3132)
+Completed 200 OK in 13ms (Views: 8.8ms | ActiveRecord: 0.8ms | Allocations: 3859)
+
+
+Started GET "/clubs/1" for ::1 at 2022-06-26 12:44:13 -0500
+Processing by ClubsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClub Load (0.5ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/clubs_controller.rb:63:in `set_club'
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/show.html.haml within layouts/application
+  [1m[36mFederation Load (0.3ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/show.html.haml:11
+  Rendered clubs/show.html.haml within layouts/application (Duration: 3.7ms | Allocations: 900)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 3134)
+Completed 200 OK in 15ms (Views: 10.2ms | ActiveRecord: 0.8ms | Allocations: 3862)
+
+
+Started GET "/clubs/1" for ::1 at 2022-06-26 12:44:58 -0500
+Processing by ClubsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClub Load (0.4ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/clubs_controller.rb:63:in `set_club'
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/show.html.haml within layouts/application
+  [1m[36mFederation Load (0.4ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/show.html.haml:11
+  Rendered clubs/show.html.haml within layouts/application (Duration: 7.1ms | Allocations: 5446)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 7887)
+Completed 200 OK in 17ms (Views: 12.6ms | ActiveRecord: 0.7ms | Allocations: 9302)
+
+
+Started GET "/clubs/1/edit" for ::1 at 2022-06-26 12:45:00 -0500
+Processing by ClubsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClub Load (0.4ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/clubs_controller.rb:63:in `set_club'
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/edit.html.haml within layouts/application
+  [1m[36mFederation Load (0.3ms)[0m  [1m[34mSELECT "federations".* FROM "federations"[0m
+  ↳ app/views/clubs/_form.html.haml:9
+  Rendered clubs/_form.html.haml (Duration: 26.1ms | Allocations: 15816)
+  Rendered clubs/edit.html.haml within layouts/application (Duration: 30.8ms | Allocations: 18811)
+  Rendered layout layouts/application.html.erb (Duration: 33.7ms | Allocations: 21044)
+Completed 200 OK in 37ms (Views: 34.0ms | ActiveRecord: 0.7ms | Allocations: 21831)
+
+
+Started GET "/clubs" for ::1 at 2022-06-26 12:45:01 -0500
+Processing by ClubsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/index.html.haml within layouts/application
+  [1m[36mClub Load (0.5ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  ↳ app/views/clubs/index.html.haml:14
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  Rendered clubs/index.html.haml within layouts/application (Duration: 10.7ms | Allocations: 7858)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 10260)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.6ms | Allocations: 10606)
+
+
+Started GET "/clubs" for ::1 at 2022-06-26 12:45:04 -0500
+Processing by ClubsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/index.html.haml within layouts/application
+  [1m[36mClub Load (0.4ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  ↳ app/views/clubs/index.html.haml:14
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  Rendered clubs/index.html.haml within layouts/application (Duration: 5.6ms | Allocations: 1375)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 3762)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.7ms | Allocations: 4025)
+
+
+Started GET "/clubs/1" for ::1 at 2022-06-26 12:45:05 -0500
+Processing by ClubsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/clubs_controller.rb:63:in `set_club'
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/show.html.haml within layouts/application
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/show.html.haml:11
+  Rendered clubs/show.html.haml within layouts/application (Duration: 2.0ms | Allocations: 915)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 3148)
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 0.3ms | Allocations: 3879)
+
+
+Started GET "/clubs/1/edit" for ::1 at 2022-06-26 12:45:10 -0500
+Processing by ClubsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClub Load (0.3ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/clubs_controller.rb:63:in `set_club'
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/edit.html.haml within layouts/application
+  [1m[36mFederation Load (0.3ms)[0m  [1m[34mSELECT "federations".* FROM "federations"[0m
+  ↳ app/views/clubs/_form.html.haml:9
+  Rendered clubs/_form.html.haml (Duration: 22.4ms | Allocations: 11373)
+  Rendered clubs/edit.html.haml within layouts/application (Duration: 22.8ms | Allocations: 11511)
+  Rendered layout layouts/application.html.erb (Duration: 25.7ms | Allocations: 13729)
+Completed 200 OK in 31ms (Views: 25.8ms | ActiveRecord: 0.7ms | Allocations: 14460)
+
+
+Started GET "/clubs" for ::1 at 2022-06-26 12:45:13 -0500
+Processing by ClubsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/index.html.haml within layouts/application
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  ↳ app/views/clubs/index.html.haml:14
+  [1m[36mFederation Load (0.3ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  Rendered clubs/index.html.haml within layouts/application (Duration: 4.1ms | Allocations: 1375)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 3750)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.5ms | Allocations: 4015)
+
+
+Started GET "/clubs" for ::1 at 2022-06-26 12:45:18 -0500
+Processing by ClubsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/index.html.haml within layouts/application
+  [1m[36mClub Load (0.3ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  ↳ app/views/clubs/index.html.haml:14
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  Rendered clubs/index.html.haml within layouts/application (Duration: 10.7ms | Allocations: 7852)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 10453)
+Completed 200 OK in 20ms (Views: 17.7ms | ActiveRecord: 0.5ms | Allocations: 11404)
+
+
+Started GET "/clubs" for ::1 at 2022-06-26 12:45:23 -0500
+Processing by ClubsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/index.html.haml within layouts/application
+  [1m[36mClub Load (0.3ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  ↳ app/views/clubs/index.html.haml:14
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  Rendered clubs/index.html.haml within layouts/application (Duration: 10.9ms | Allocations: 7860)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 10465)
+Completed 200 OK in 20ms (Views: 17.1ms | ActiveRecord: 0.5ms | Allocations: 11416)
+
+
+Started GET "/clubs/1" for ::1 at 2022-06-26 12:45:26 -0500
+Processing by ClubsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClub Load (0.3ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/clubs_controller.rb:63:in `set_club'
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/show.html.haml within layouts/application
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/show.html.haml:11
+  Rendered clubs/show.html.haml within layouts/application (Duration: 7.6ms | Allocations: 5439)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 7669)
+Completed 200 OK in 15ms (Views: 12.2ms | ActiveRecord: 0.6ms | Allocations: 8480)
+
+
+Started GET "/clubs" for ::1 at 2022-06-26 12:45:36 -0500
+Processing by ClubsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/index.html.haml within layouts/application
+  [1m[36mClub Load (0.3ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  ↳ app/views/clubs/index.html.haml:14
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  Rendered clubs/index.html.haml within layouts/application (Duration: 12.2ms | Allocations: 7870)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 10474)
+Completed 200 OK in 20ms (Views: 18.2ms | ActiveRecord: 0.4ms | Allocations: 11429)
+
+
+Started GET "/clubs/1" for ::1 at 2022-06-26 12:45:38 -0500
+Processing by ClubsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/clubs_controller.rb:63:in `set_club'
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/show.html.haml within layouts/application
+  [1m[36mFederation Load (0.3ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/show.html.haml:11
+  Rendered clubs/show.html.haml within layouts/application (Duration: 7.7ms | Allocations: 5462)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 7707)
+Completed 200 OK in 15ms (Views: 12.1ms | ActiveRecord: 0.4ms | Allocations: 8519)
+
+
+Started GET "/clubs/1/edit" for ::1 at 2022-06-26 12:45:50 -0500
+Processing by ClubsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClub Load (0.3ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/clubs_controller.rb:63:in `set_club'
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/edit.html.haml within layouts/application
+  [1m[36mFederation Load (0.4ms)[0m  [1m[34mSELECT "federations".* FROM "federations"[0m
+  ↳ app/views/clubs/_form.html.haml:9
+  Rendered clubs/_form.html.haml (Duration: 28.3ms | Allocations: 15768)
+  Rendered clubs/edit.html.haml within layouts/application (Duration: 32.8ms | Allocations: 18761)
+  Rendered layout layouts/application.html.erb (Duration: 35.7ms | Allocations: 20988)
+Completed 200 OK in 40ms (Views: 35.7ms | ActiveRecord: 0.7ms | Allocations: 21775)
+
+
+Started GET "/clubs/1" for ::1 at 2022-06-26 12:45:52 -0500
+Processing by ClubsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/clubs_controller.rb:63:in `set_club'
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/show.html.haml within layouts/application
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/show.html.haml:11
+  Rendered clubs/show.html.haml within layouts/application (Duration: 2.1ms | Allocations: 893)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 3113)
+Completed 200 OK in 9ms (Views: 6.5ms | ActiveRecord: 0.3ms | Allocations: 3844)
+
+
+Started GET "/clubs/1/edit" for ::1 at 2022-06-26 12:45:54 -0500
+Processing by ClubsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/clubs_controller.rb:63:in `set_club'
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/edit.html.haml within layouts/application
+  [1m[36mFederation Load (0.3ms)[0m  [1m[34mSELECT "federations".* FROM "federations"[0m
+  ↳ app/views/clubs/_form.html.haml:9
+  Rendered clubs/_form.html.haml (Duration: 24.3ms | Allocations: 11359)
+  Rendered clubs/edit.html.haml within layouts/application (Duration: 24.6ms | Allocations: 11497)
+  Rendered layout layouts/application.html.erb (Duration: 27.8ms | Allocations: 13724)
+Completed 200 OK in 30ms (Views: 27.9ms | ActiveRecord: 0.5ms | Allocations: 14453)
+
+
+Started GET "/clubs" for ::1 at 2022-06-26 12:45:55 -0500
+Processing by ClubsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/index.html.haml within layouts/application
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  ↳ app/views/clubs/index.html.haml:14
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  Rendered clubs/index.html.haml within layouts/application (Duration: 3.5ms | Allocations: 1376)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 3751)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.4ms | Allocations: 4016)
+
+
+Started GET "/clubs/new" for ::1 at 2022-06-26 12:45:57 -0500
+Processing by ClubsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/new.html.haml within layouts/application
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations"[0m
+  ↳ app/views/clubs/_form.html.haml:9
+  Rendered clubs/_form.html.haml (Duration: 23.7ms | Allocations: 11201)
+  Rendered clubs/new.html.haml within layouts/application (Duration: 27.2ms | Allocations: 13728)
+  Rendered layout layouts/application.html.erb (Duration: 30.2ms | Allocations: 15969)
+Completed 200 OK in 32ms (Views: 30.5ms | ActiveRecord: 0.2ms | Allocations: 16292)
+
+
+Started GET "/clubs" for ::1 at 2022-06-26 12:45:59 -0500
+Processing by ClubsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/index.html.haml within layouts/application
+  [1m[36mClub Load (0.4ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  ↳ app/views/clubs/index.html.haml:14
+  [1m[36mFederation Load (0.3ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  Rendered clubs/index.html.haml within layouts/application (Duration: 4.8ms | Allocations: 1379)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 3754)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.8ms | Allocations: 4020)
+
+
+Started GET "/players" for ::1 at 2022-06-26 12:46:15 -0500
+Processing by PlayersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering players/index.html.haml within layouts/application
+  [1m[36mPlayer Load (1.2ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/views/players/index.html.haml:15
+  Rendered players/index.html.haml within layouts/application (Duration: 7.6ms | Allocations: 7473)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 9865)
+Completed 200 OK in 16ms (Views: 11.2ms | ActiveRecord: 1.2ms | Allocations: 11828)
+
+
+Started GET "/players/new" for ::1 at 2022-06-26 12:46:16 -0500
+Processing by PlayersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering players/new.html.haml within layouts/application
+  [1m[36mClub Load (0.4ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  ↳ app/views/players/_form.html.haml:10
+  Rendered players/_form.html.haml (Duration: 33.6ms | Allocations: 19727)
+  Rendered players/new.html.haml within layouts/application (Duration: 39.1ms | Allocations: 22316)
+  Rendered layout layouts/application.html.erb (Duration: 41.6ms | Allocations: 24566)
+Completed 200 OK in 53ms (Views: 42.2ms | ActiveRecord: 3.4ms | Allocations: 28362)
+
+
+Started POST "/players" for ::1 at 2022-06-26 12:46:46 -0500
+Processing by PlayersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "player"=>{"name"=>"David Ospina", "birth_date(1i)"=>"2017", "birth_date(2i)"=>"1", "birth_date(3i)"=>"1", "value"=>"3000000", "club_id"=>"1"}, "commit"=>"Create Player"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/players_controller.rb:27:in `block in create'
+  [1m[36mClub Load (0.3ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:27:in `block in create'
+  [1m[36mPlayer Create (1.2ms)[0m  [1m[32mINSERT INTO "players" ("name", "birth_date", "value", "club_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "David Ospina"], ["birth_date", "2017-01-01"], ["value", 3000000], ["club_id", 1], ["created_at", "2022-06-26 17:46:46.197028"], ["updated_at", "2022-06-26 17:46:46.197028"]]
+  ↳ app/controllers/players_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/players_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/players/1
+Completed 302 Found in 14ms (ActiveRecord: 1.9ms | Allocations: 3944)
+
+
+Started GET "/players/1" for ::1 at 2022-06-26 12:46:46 -0500
+Processing by PlayersController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:63:in `set_player'
+  Rendering layout layouts/application.html.erb
+  Rendering players/show.html.haml within layouts/application
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/players/show.html.haml:14
+  Rendered players/show.html.haml within layouts/application (Duration: 6.5ms | Allocations: 5976)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 8207)
+Completed 200 OK in 13ms (Views: 9.6ms | ActiveRecord: 0.6ms | Allocations: 9613)
+
+
+Started GET "/players/1" for ::1 at 2022-06-26 12:48:36 -0500
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlayer Load (0.6ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:63:in `set_player'
+  Rendering layout layouts/application.html.erb
+  Rendering players/show.html.haml within layouts/application
+  [1m[36mClub Load (0.3ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/players/show.html.haml:14
+  Rendered players/show.html.haml within layouts/application (Duration: 10.6ms | Allocations: 6040)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 8491)
+Completed 200 OK in 22ms (Views: 17.3ms | ActiveRecord: 0.9ms | Allocations: 9907)
+
+
+Started GET "/players/1" for ::1 at 2022-06-26 12:48:45 -0500
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:63:in `set_player'
+  Rendering layout layouts/application.html.erb
+  Rendering players/show.html.haml within layouts/application
+  [1m[36mClub Load (0.3ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/players/show.html.haml:14
+  Rendered players/show.html.haml within layouts/application (Duration: 10.2ms | Allocations: 6059)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 8504)
+Completed 200 OK in 22ms (Views: 17.3ms | ActiveRecord: 0.7ms | Allocations: 9921)
+
+
+Started GET "/players/1/edit" for ::1 at 2022-06-26 12:49:19 -0500
+Processing by PlayersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:63:in `set_player'
+  Rendering layout layouts/application.html.erb
+  Rendering players/edit.html.haml within layouts/application
+  [1m[36mClub Load (0.4ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  ↳ app/views/players/_form.html.haml:10
+  Rendered players/_form.html.haml (Duration: 23.0ms | Allocations: 18934)
+  Rendered players/edit.html.haml within layouts/application (Duration: 27.3ms | Allocations: 21940)
+  Rendered layout layouts/application.html.erb (Duration: 29.1ms | Allocations: 24177)
+Completed 200 OK in 33ms (Views: 29.2ms | ActiveRecord: 0.8ms | Allocations: 24966)
+
+
+Started GET "/players" for ::1 at 2022-06-26 12:49:24 -0500
+Processing by PlayersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering players/index.html.haml within layouts/application
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/views/players/index.html.haml:15
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  Rendered players/index.html.haml within layouts/application (Duration: 11.3ms | Allocations: 8332)
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 10750)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.5ms | Allocations: 11098)
+
+
+Started GET "/clubs" for ::1 at 2022-06-26 12:51:23 -0500
+Processing by ClubsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/index.html.haml within layouts/application
+  [1m[36mClub Load (0.4ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  ↳ app/views/clubs/index.html.haml:14
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  Rendered clubs/index.html.haml within layouts/application (Duration: 13.0ms | Allocations: 7858)
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 10256)
+Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.6ms | Allocations: 11031)
+
+

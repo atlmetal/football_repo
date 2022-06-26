@@ -17,7 +17,7 @@
         %td= player.name
         %td= player.birth_date
         %td= player.value
-        %td= player.club
+        %td= player.club.name
         %td= link_to 'Show', player
         %td= link_to 'Edit', edit_player_path(player)
         %td= link_to 'Destroy', player, method: :delete, data: { confirm: 'Are you sure?' }

@@ -15,7 +15,7 @@
       %tr
         %td= club.name
         %td= club.foundation_date
-        %td= club.federation
+        %td= club.federation.name
         %td= link_to 'Show', club
         %td= link_to 'Edit', edit_club_path(club)
         %td= link_to 'Destroy', club, method: :delete, data: { confirm: 'Are you sure?' }
