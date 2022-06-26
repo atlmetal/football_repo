@@ -1,5 +1,6 @@
 class WelcomeController < ApplicationController
   def hello
-    render html: "Hello, world!"
+    @credentials = Rails.application.credentials.hello
+    @variable = Federation.first.name
   end
 end
