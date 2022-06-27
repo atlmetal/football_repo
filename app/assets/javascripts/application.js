@@ -1,7 +1,8 @@
-//= require select2
-//= require jquery
 //= require rails-ujs
-//= require_tree .
+//= require activestorage
+//= require jquery
 //= require popper
 //= require bootstrap
-//= require turbolinks
+//= require datatables
+//= require select2
+//= require_tree .

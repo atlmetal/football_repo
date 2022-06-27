@@ -1684,3 +1684,1056 @@ Processing by PlayersController#index as HTML
 Completed 200 OK in 38ms (Views: 34.1ms | ActiveRecord: 2.6ms | Allocations: 21546)
 
 
+Started GET "/players" for ::1 at 2022-06-27 17:22:41 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlayersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering players/index.html.haml within layouts/application
+  [1m[36mPlayer Load (0.9ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/views/players/index.html.haml:15
+  [1m[36mClub Load (0.4ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (6.6ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (6.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (3.4ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.3ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  Rendered players/index.html.haml within layouts/application (Duration: 60.0ms | Allocations: 43763)
+  Rendered layout layouts/application.html.erb (Duration: 2357.5ms | Allocations: 238878)
+Completed 500 Internal Server Error in 2365ms (ActiveRecord: 31.0ms | Allocations: 245972)
+
+
+  
+ActionView::Template::Error (couldn't find file 'turbolinks' with type 'application/javascript'
+Checked in these paths: 
+  /Users/mateodelrio/Desktop/ror/football_repo/app/assets/config
+  /Users/mateodelrio/Desktop/ror/football_repo/app/assets/images
+  /Users/mateodelrio/Desktop/ror/football_repo/app/assets/javascripts
+  /Users/mateodelrio/Desktop/ror/football_repo/app/assets/stylesheets
+  /Users/mateodelrio/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/jquery-datatables-1.10.20/app/assets/images
+  /Users/mateodelrio/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/jquery-datatables-1.10.20/app/assets/javascripts
+  /Users/mateodelrio/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/jquery-datatables-1.10.20/app/assets/media
+  /Users/mateodelrio/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets
+  /Users/mateodelrio/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/jquery-rails-4.5.0/vendor/assets/javascripts
+  /Users/mateodelrio/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/select2-rails-4.0.13/vendor/assets/javascripts
+  /Users/mateodelrio/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/select2-rails-4.0.13/vendor/assets/stylesheets
+  /Users/mateodelrio/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/stimulus-rails-1.0.4/app/assets/javascripts
+  /Users/mateodelrio/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/turbo-rails-1.1.1/app/assets/javascripts
+  /Users/mateodelrio/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/importmap-rails-1.1.2/app/assets/javascripts
+  /Users/mateodelrio/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/actioncable-7.0.3/app/assets/javascripts
+  /Users/mateodelrio/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/actiontext-7.0.3/app/assets/javascripts
+  /Users/mateodelrio/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/actiontext-7.0.3/app/assets/stylesheets
+  /Users/mateodelrio/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/activestorage-7.0.3/app/assets/javascripts
+  /Users/mateodelrio/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/actionview-7.0.3/lib/assets/compiled
+  /Users/mateodelrio/Desktop/ror/football_repo/app/javascript
+  /Users/mateodelrio/Desktop/ror/football_repo/vendor/javascript
+  /Users/mateodelrio/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets
+  /Users/mateodelrio/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/jquery-datatables-1.10.20/app/assets/javascripts
+  /Users/mateodelrio/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/jquery-datatables-1.10.20/app/assets/images
+  /Users/mateodelrio/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/popper_js-1.16.0/assets/javascripts
+  /Users/mateodelrio/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/bootstrap-4.6.1/assets/stylesheets
+  /Users/mateodelrio/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/bootstrap-4.6.1/assets/javascripts):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:     <%= javascript_importmap_tags %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/assets/javascripts/application.js:3
+app/views/layouts/application.html.erb:10
+Started GET "/players" for ::1 at 2022-06-27 17:23:15 -0500
+Processing by PlayersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering players/index.html.haml within layouts/application
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/views/players/index.html.haml:15
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.3ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.3ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.3ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  Rendered players/index.html.haml within layouts/application (Duration: 29.4ms | Allocations: 16923)
+  Rendered layout layouts/application.html.erb (Duration: 233.9ms | Allocations: 113367)
+Completed 200 OK in 236ms (Views: 231.6ms | ActiveRecord: 2.9ms | Allocations: 113648)
+
+
+Started GET "/players" for ::1 at 2022-06-27 17:23:28 -0500
+Processing by PlayersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering players/index.html.haml within layouts/application
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/views/players/index.html.haml:15
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.3ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  Rendered players/index.html.haml within layouts/application (Duration: 25.4ms | Allocations: 16914)
+  Rendered layout layouts/application.html.erb (Duration: 33.2ms | Allocations: 24838)
+Completed 200 OK in 35ms (Views: 31.5ms | ActiveRecord: 2.2ms | Allocations: 25108)
+
+
+Started GET "/federations" for ::1 at 2022-06-27 17:23:32 -0500
+Processing by FederationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering federations/index.html.haml within layouts/application
+  [1m[36mFederation Load (0.6ms)[0m  [1m[34mSELECT "federations".* FROM "federations"[0m
+  ↳ app/views/federations/index.html.haml:13
+  Rendered federations/index.html.haml within layouts/application (Duration: 12.9ms | Allocations: 11071)
+  Rendered layout layouts/application.html.erb (Duration: 21.2ms | Allocations: 18942)
+Completed 200 OK in 25ms (Views: 19.4ms | ActiveRecord: 3.2ms | Allocations: 19999)
+
+
+Started GET "/clubs" for ::1 at 2022-06-27 17:23:45 -0500
+Processing by ClubsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/index.html.haml within layouts/application
+  Rendered clubs/index.html.haml within layouts/application (Duration: 1.8ms | Allocations: 2985)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 3059)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 3865)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %table and nested within it.):
+    1: %h1 Listing clubs
+    2: 
+    3: %table id='clubsTable' class='table table-striped table-sm'
+    4:   %thead
+    5:     %tr
+    6:       %th Name
+    7:       %th Foundation date
+  
+app/views/clubs/index.html.haml:4
+Started GET "/clubs" for ::1 at 2022-06-27 17:25:45 -0500
+Processing by ClubsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/index.html.haml within layouts/application
+  Rendered clubs/index.html.haml within layouts/application (Duration: 2.7ms | Allocations: 3984)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 4058)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 4983)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %script and nested within it.):
+    23: %br
+    24: 
+    25: %script type='text/javascript'
+    26:   $(document).ready(function() {
+    27:     var cTable = $("#clubsTable").DataTable({})
+    28:   });
+    29: 
+  
+app/views/clubs/index.html.haml:26
+Started GET "/clubs" for ::1 at 2022-06-27 17:25:58 -0500
+Processing by ClubsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/index.html.haml within layouts/application
+  Rendered clubs/index.html.haml within layouts/application (Duration: 3.7ms | Allocations: 2984)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 3058)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 3983)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %table and nested within it.):
+    1: %h1 Listing clubs
+    2: 
+    3: %table #clubsTable.table.table-striped.table-sm
+    4:   %thead
+    5:     %tr
+    6:       %th Name
+    7:       %th Foundation date
+  
+app/views/clubs/index.html.haml:4
+Started GET "/clubs" for ::1 at 2022-06-27 17:26:00 -0500
+Processing by ClubsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/index.html.haml within layouts/application
+  Rendered clubs/index.html.haml within layouts/application (Duration: 1.1ms | Allocations: 947)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1021)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1259)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %table and nested within it.):
+    1: %h1 Listing clubs
+    2: 
+    3: %table #clubsTable.table.table-striped.table-sm
+    4:   %thead
+    5:     %tr
+    6:       %th Name
+    7:       %th Foundation date
+  
+app/views/clubs/index.html.haml:4
+Started GET "/clubs" for ::1 at 2022-06-27 17:26:34 -0500
+Processing by ClubsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/index.html.haml within layouts/application
+  Rendered clubs/index.html.haml within layouts/application (Duration: 3.8ms | Allocations: 2979)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 3054)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 3987)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %table and nested within it.):
+    1: %h1 Listing clubs
+    2: 
+    3: %table #clubsTable.table.table-striped.table-sm %thead
+    4:     %tr
+    5:       %th Name
+    6:       %th Foundation date
+    7:       %th Federation
+  
+app/views/clubs/index.html.haml:4
+Started GET "/clubs" for ::1 at 2022-06-27 17:30:45 -0500
+Processing by ClubsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/index.html.erb within layouts/application
+  [1m[36mClub Load (0.7ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  ↳ app/views/clubs/index.html.erb:15
+  [1m[36mFederation Load (0.6ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.3ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.3ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  Rendered clubs/index.html.erb within layouts/application (Duration: 44.8ms | Allocations: 21596)
+  Rendered layout layouts/application.html.erb (Duration: 54.4ms | Allocations: 29802)
+Completed 200 OK in 59ms (Views: 56.9ms | ActiveRecord: 10.7ms | Allocations: 30803)
+
+
+Started GET "/clubs" for ::1 at 2022-06-27 17:30:55 -0500
+Processing by ClubsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/index.html.erb within layouts/application
+  Rendered clubs/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1266)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1341)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 2318)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%# <h1>Listing clubs</h1>
+<table id='clubsTable' class='table table-striped table-sm'>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Foundation date</th>
+      <th>Federation</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @clubs.each do |club| %>
+      <tr>
+        <td>
+          <%= club.name %>
+        </td>
+        <td>
+          <%= club.foundation_date %>
+        </td>
+        <td>
+          <%= club.federation.name %>
+        </td>
+        <td>
+          <%= link_to 'Show', club %>
+        </td>
+        <td>
+          <%= link_to 'Edit', edit_club_path(club) %>
+        </td>
+        <td>
+          <%= link_to 'Destroy', club, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<script>
+  $(document).ready(function() {
+    var cTable = $("#clubsTable").DataTable({})
+  });
+</script> %>
+):
+1:    <%# <h1>Listing clubs</h1>
+2:    <table id='clubsTable' class='table table-striped table-sm'>
+3:      <thead>
+4:        <tr>
+5:          <th>Name</th>
+6:          <th>Foundation date</th>
+7:          <th>Federation</th>
+8:          <th></th>
+9:          <th></th>
+10:          <th></th>
+11:        </tr>
+12:      </thead>
+13:    
+14:      <tbody>
+15:        <% @clubs.each do |club| %>
+16:          <tr>
+17:            <td>
+18:              <%= club.name %>
+19:            </td>
+20:            <td>
+21:              <%= club.foundation_date %>
+22:            </td>
+23:            <td>
+24:              <%= club.federation.name %>
+25:            </td>
+26:            <td>
+27:              <%= link_to 'Show', club %>
+28:            </td>
+29:            <td>
+30:              <%= link_to 'Edit', edit_club_path(club) %>
+31:            </td>
+32:            <td>
+33:              <%= link_to 'Destroy', club, method: :delete, data: { confirm: 'Are you sure?' } %>
+34:            </td>
+35:          </tr>
+36:        <% end %>
+37:      </tbody>
+38:    </table>
+39:    
+40:    <script>
+41:      $(document).ready(function() {
+42:        var cTable = $("#clubsTable").DataTable({})
+43:      });
+44:    </script> %>
+  
+app/views/clubs/index.html.erb:46: syntax error, unexpected `end', expecting end-of-input
+app/views/clubs/index.html.erb:46: syntax error, unexpected `end', expecting end-of-input
+app/views/clubs/index.html.erb:46: syntax error, unexpected `end', expecting end-of-input
+app/views/clubs/index.html.erb:46: syntax error, unexpected `end', expecting end-of-input
+app/views/clubs/index.html.erb:46: syntax error, unexpected `end', expecting end-of-input
+app/views/clubs/index.html.erb:46: syntax error, unexpected `end', expecting end-of-input
+Started GET "/clubs" for ::1 at 2022-06-27 17:30:59 -0500
+Processing by ClubsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/index.html.erb within layouts/application
+  Rendered clubs/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1257)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1332)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1585)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%# <h1>Listing clubs</h1>
+<table id='clubsTable' class='table table-striped table-sm'>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Foundation date</th>
+      <th>Federation</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @clubs.each do |club| %>
+      <tr>
+        <td>
+          <%= club.name %>
+        </td>
+        <td>
+          <%= club.foundation_date %>
+        </td>
+        <td>
+          <%= club.federation.name %>
+        </td>
+        <td>
+          <%= link_to 'Show', club %>
+        </td>
+        <td>
+          <%= link_to 'Edit', edit_club_path(club) %>
+        </td>
+        <td>
+          <%= link_to 'Destroy', club, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<script>
+  $(document).ready(function() {
+    var cTable = $("#clubsTable").DataTable({})
+  });
+</script> %>
+):
+1:    <%# <h1>Listing clubs</h1>
+2:    <table id='clubsTable' class='table table-striped table-sm'>
+3:      <thead>
+4:        <tr>
+5:          <th>Name</th>
+6:          <th>Foundation date</th>
+7:          <th>Federation</th>
+8:          <th></th>
+9:          <th></th>
+10:          <th></th>
+11:        </tr>
+12:      </thead>
+13:    
+14:      <tbody>
+15:        <% @clubs.each do |club| %>
+16:          <tr>
+17:            <td>
+18:              <%= club.name %>
+19:            </td>
+20:            <td>
+21:              <%= club.foundation_date %>
+22:            </td>
+23:            <td>
+24:              <%= club.federation.name %>
+25:            </td>
+26:            <td>
+27:              <%= link_to 'Show', club %>
+28:            </td>
+29:            <td>
+30:              <%= link_to 'Edit', edit_club_path(club) %>
+31:            </td>
+32:            <td>
+33:              <%= link_to 'Destroy', club, method: :delete, data: { confirm: 'Are you sure?' } %>
+34:            </td>
+35:          </tr>
+36:        <% end %>
+37:      </tbody>
+38:    </table>
+39:    
+40:    <script>
+41:      $(document).ready(function() {
+42:        var cTable = $("#clubsTable").DataTable({})
+43:      });
+44:    </script> %>
+  
+app/views/clubs/index.html.erb:46: syntax error, unexpected `end', expecting end-of-input
+app/views/clubs/index.html.erb:46: syntax error, unexpected `end', expecting end-of-input
+app/views/clubs/index.html.erb:46: syntax error, unexpected `end', expecting end-of-input
+app/views/clubs/index.html.erb:46: syntax error, unexpected `end', expecting end-of-input
+app/views/clubs/index.html.erb:46: syntax error, unexpected `end', expecting end-of-input
+app/views/clubs/index.html.erb:46: syntax error, unexpected `end', expecting end-of-input
+Started GET "/clubs" for ::1 at 2022-06-27 17:31:13 -0500
+Processing by ClubsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/index.html.erb within layouts/application
+  [1m[36mClub Load (0.3ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  ↳ app/views/clubs/index.html.erb:15
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  Rendered clubs/index.html.erb within layouts/application (Duration: 28.2ms | Allocations: 17247)
+  Rendered layout layouts/application.html.erb (Duration: 37.1ms | Allocations: 25455)
+Completed 200 OK in 41ms (Views: 37.2ms | ActiveRecord: 2.0ms | Allocations: 26456)
+
+
+Started GET "/clubs" for ::1 at 2022-06-27 17:34:53 -0500
+Processing by ClubsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/index.html.erb within layouts/application
+  [1m[36mClub Load (0.5ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  ↳ app/views/clubs/index.html.erb:12
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  Rendered clubs/index.html.erb within layouts/application (Duration: 22.5ms | Allocations: 14252)
+  Rendered layout layouts/application.html.erb (Duration: 33.8ms | Allocations: 22320)
+Completed 200 OK in 38ms (Views: 34.4ms | ActiveRecord: 2.2ms | Allocations: 23322)
+
+
+Started GET "/clubs" for ::1 at 2022-06-27 17:37:01 -0500
+Processing by ClubsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/index.html.erb within layouts/application
+  [1m[36mClub Load (0.3ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  ↳ app/views/clubs/index.html.erb:12
+  [1m[36mFederation Load (0.8ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mFederation Load (0.3ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  Rendered clubs/index.html.erb within layouts/application (Duration: 21.5ms | Allocations: 17237)
+  Rendered layout layouts/application.html.erb (Duration: 29.0ms | Allocations: 25302)
+Completed 200 OK in 33ms (Views: 28.8ms | ActiveRecord: 2.8ms | Allocations: 26303)
+
+
+Started GET "/clubs" for ::1 at 2022-06-27 17:37:11 -0500
+Processing by ClubsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/index.html.erb within layouts/application
+  [1m[36mClub Load (0.3ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  ↳ app/views/clubs/index.html.erb:15
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  Rendered clubs/index.html.erb within layouts/application (Duration: 28.4ms | Allocations: 17243)
+  Rendered layout layouts/application.html.erb (Duration: 38.0ms | Allocations: 25310)
+Completed 200 OK in 43ms (Views: 38.6ms | ActiveRecord: 2.1ms | Allocations: 26311)
+
+
+Started GET "/clubs" for ::1 at 2022-06-27 17:38:48 -0500
+Processing by ClubsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/index.html.erb within layouts/application
+  [1m[36mClub Load (0.3ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  ↳ app/views/clubs/index.html.erb:15
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.3ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  Rendered clubs/index.html.erb within layouts/application (Duration: 27.5ms | Allocations: 17247)
+  Rendered layout layouts/application.html.erb (Duration: 36.9ms | Allocations: 25455)
+Completed 200 OK in 41ms (Views: 36.6ms | ActiveRecord: 2.4ms | Allocations: 26457)
+
+
+Started GET "/clubs" for ::1 at 2022-06-27 17:38:50 -0500
+Processing by ClubsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/index.html.erb within layouts/application
+  [1m[36mClub Load (0.5ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  ↳ app/views/clubs/index.html.erb:15
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.3ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  Rendered clubs/index.html.erb within layouts/application (Duration: 30.6ms | Allocations: 16908)
+  Rendered layout layouts/application.html.erb (Duration: 40.0ms | Allocations: 24745)
+Completed 200 OK in 42ms (Views: 37.6ms | ActiveRecord: 2.9ms | Allocations: 25023)
+
+
+Started GET "/clubs" for ::1 at 2022-06-27 17:38:51 -0500
+Processing by ClubsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/index.html.erb within layouts/application
+  [1m[36mClub Load (0.4ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  ↳ app/views/clubs/index.html.erb:15
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.3ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  Rendered clubs/index.html.erb within layouts/application (Duration: 27.8ms | Allocations: 16901)
+  Rendered layout layouts/application.html.erb (Duration: 36.7ms | Allocations: 24763)
+Completed 200 OK in 38ms (Views: 34.8ms | ActiveRecord: 2.4ms | Allocations: 25039)
+
+
+Started GET "/clubs" for ::1 at 2022-06-27 17:38:59 -0500
+Processing by ClubsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/index.html.erb within layouts/application
+  [1m[36mClub Load (0.4ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  ↳ app/views/clubs/index.html.erb:15
+  [1m[36mFederation Load (0.4ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.3ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:24
+  Rendered clubs/index.html.erb within layouts/application (Duration: 32.2ms | Allocations: 16901)
+  Rendered layout layouts/application.html.erb (Duration: 41.0ms | Allocations: 24736)
+Completed 200 OK in 43ms (Views: 39.1ms | ActiveRecord: 2.6ms | Allocations: 25013)
+
+
+Started GET "/clubs" for ::1 at 2022-06-27 17:39:12 -0500
+Processing by ClubsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/index.html.erb within layouts/application
+  [1m[36mClub Load (0.4ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  ↳ app/views/clubs/index.html.erb:12
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mFederation Load (1.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.erb:21
+  Rendered clubs/index.html.erb within layouts/application (Duration: 25.6ms | Allocations: 14253)
+  Rendered layout layouts/application.html.erb (Duration: 35.4ms | Allocations: 22321)
+Completed 200 OK in 40ms (Views: 35.3ms | ActiveRecord: 3.1ms | Allocations: 23322)
+
+
