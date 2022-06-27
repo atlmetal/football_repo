@@ -1102,3 +1102,585 @@ Processing by ClubsController#index as HTML
 Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.6ms | Allocations: 11031)
 
 
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFederation Create (3.8ms)[0m  [1m[32mINSERT INTO "federations" ("name", "foundation_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Volkman Group"], ["foundation_date", "2011-07-01"], ["created_at", "2022-06-27 21:33:52.631336"], ["updated_at", "2022-06-27 21:33:52.631336"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFederation Create (0.5ms)[0m  [1m[32mINSERT INTO "federations" ("name", "foundation_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Wolff, O'Hara and Reinger"], ["foundation_date", "2007-11-23"], ["created_at", "2022-06-27 21:33:52.638192"], ["updated_at", "2022-06-27 21:33:52.638192"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFederation Create (0.3ms)[0m  [1m[32mINSERT INTO "federations" ("name", "foundation_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Swaniawski, Feil and Runte"], ["foundation_date", "2000-10-14"], ["created_at", "2022-06-27 21:33:52.640614"], ["updated_at", "2022-06-27 21:33:52.640614"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFederation Create (0.2ms)[0m  [1m[32mINSERT INTO "federations" ("name", "foundation_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Block-Wehner"], ["foundation_date", "2003-09-02"], ["created_at", "2022-06-27 21:33:52.642672"], ["updated_at", "2022-06-27 21:33:52.642672"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFederation Create (0.2ms)[0m  [1m[32mINSERT INTO "federations" ("name", "foundation_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Veum-Gottlieb"], ["foundation_date", "2016-12-22"], ["created_at", "2022-06-27 21:33:52.644609"], ["updated_at", "2022-06-27 21:33:52.644609"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFederation Create (0.2ms)[0m  [1m[32mINSERT INTO "federations" ("name", "foundation_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Marks Inc"], ["foundation_date", "2012-10-22"], ["created_at", "2022-06-27 21:33:52.646445"], ["updated_at", "2022-06-27 21:33:52.646445"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFederation Create (0.2ms)[0m  [1m[32mINSERT INTO "federations" ("name", "foundation_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Smith Group"], ["foundation_date", "2014-09-18"], ["created_at", "2022-06-27 21:33:52.648273"], ["updated_at", "2022-06-27 21:33:52.648273"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFederation Create (0.2ms)[0m  [1m[32mINSERT INTO "federations" ("name", "foundation_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Wuckert, Stoltenberg and Cremin"], ["foundation_date", "2006-11-26"], ["created_at", "2022-06-27 21:33:52.650089"], ["updated_at", "2022-06-27 21:33:52.650089"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFederation Create (0.2ms)[0m  [1m[32mINSERT INTO "federations" ("name", "foundation_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Swaniawski, Littel and Cormier"], ["foundation_date", "2014-12-11"], ["created_at", "2022-06-27 21:33:52.651814"], ["updated_at", "2022-06-27 21:33:52.651814"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFederation Create (0.2ms)[0m  [1m[32mINSERT INTO "federations" ("name", "foundation_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Kihn, Borer and Lebsack"], ["foundation_date", "2015-11-09"], ["created_at", "2022-06-27 21:33:52.653560"], ["updated_at", "2022-06-27 21:33:52.653560"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFederation Create (0.2ms)[0m  [1m[32mINSERT INTO "federations" ("name", "foundation_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Franecki, Schinner and Paucek"], ["foundation_date", "2016-01-17"], ["created_at", "2022-06-27 21:33:52.655455"], ["updated_at", "2022-06-27 21:33:52.655455"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFederation Create (0.4ms)[0m  [1m[32mINSERT INTO "federations" ("name", "foundation_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Simonis-Leuschke"], ["foundation_date", "2003-09-18"], ["created_at", "2022-06-27 21:33:52.657221"], ["updated_at", "2022-06-27 21:33:52.657221"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFederation Create (0.3ms)[0m  [1m[32mINSERT INTO "federations" ("name", "foundation_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Bogan-Wolf"], ["foundation_date", "2012-11-11"], ["created_at", "2022-06-27 21:33:52.659132"], ["updated_at", "2022-06-27 21:33:52.659132"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFederation Create (0.3ms)[0m  [1m[32mINSERT INTO "federations" ("name", "foundation_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Wiza-Hegmann"], ["foundation_date", "2019-04-18"], ["created_at", "2022-06-27 21:33:52.661161"], ["updated_at", "2022-06-27 21:33:52.661161"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFederation Create (0.2ms)[0m  [1m[32mINSERT INTO "federations" ("name", "foundation_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Bednar, Miller and Schaden"], ["foundation_date", "2013-04-20"], ["created_at", "2022-06-27 21:33:52.663153"], ["updated_at", "2022-06-27 21:33:52.663153"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFederation Create (0.3ms)[0m  [1m[32mINSERT INTO "federations" ("name", "foundation_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Hermiston-Roberts"], ["foundation_date", "2004-01-14"], ["created_at", "2022-06-27 21:33:52.664838"], ["updated_at", "2022-06-27 21:33:52.664838"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFederation Create (0.2ms)[0m  [1m[32mINSERT INTO "federations" ("name", "foundation_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Schinner Inc"], ["foundation_date", "2004-11-15"], ["created_at", "2022-06-27 21:33:52.666713"], ["updated_at", "2022-06-27 21:33:52.666713"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFederation Create (0.2ms)[0m  [1m[32mINSERT INTO "federations" ("name", "foundation_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Hirthe Group"], ["foundation_date", "2016-01-19"], ["created_at", "2022-06-27 21:33:52.668402"], ["updated_at", "2022-06-27 21:33:52.668402"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFederation Create (0.3ms)[0m  [1m[32mINSERT INTO "federations" ("name", "foundation_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Wintheiser and Sons"], ["foundation_date", "2000-04-25"], ["created_at", "2022-06-27 21:33:52.670192"], ["updated_at", "2022-06-27 21:33:52.670192"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFederation Create (0.2ms)[0m  [1m[32mINSERT INTO "federations" ("name", "foundation_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Harris, Jacobson and Haag"], ["foundation_date", "2013-12-01"], ["created_at", "2022-06-27 21:33:52.672037"], ["updated_at", "2022-06-27 21:33:52.672037"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mFederation Load (0.3ms)[0m  [1m[34mSELECT "federations".* FROM "federations"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mClub Create (5.7ms)[0m  [1m[32mINSERT INTO "clubs" ("name", "foundation_date", "federation_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Stroman Group"], ["foundation_date", "2006-09-30"], ["federation_id", 1], ["created_at", "2022-06-27 21:33:52.689313"], ["updated_at", "2022-06-27 21:33:52.689313"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mClub Create (0.4ms)[0m  [1m[32mINSERT INTO "clubs" ("name", "foundation_date", "federation_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Rowe, Adams and Vandervort"], ["foundation_date", "2010-01-14"], ["federation_id", 18], ["created_at", "2022-06-27 21:33:52.698375"], ["updated_at", "2022-06-27 21:33:52.698375"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mClub Create (0.4ms)[0m  [1m[32mINSERT INTO "clubs" ("name", "foundation_date", "federation_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Fahey-Larkin"], ["foundation_date", "2002-05-18"], ["federation_id", 16], ["created_at", "2022-06-27 21:33:52.701919"], ["updated_at", "2022-06-27 21:33:52.701919"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mClub Create (0.4ms)[0m  [1m[32mINSERT INTO "clubs" ("name", "foundation_date", "federation_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Kub, Strosin and Mosciski"], ["foundation_date", "2000-10-28"], ["federation_id", 1], ["created_at", "2022-06-27 21:33:52.705325"], ["updated_at", "2022-06-27 21:33:52.705325"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mClub Create (0.4ms)[0m  [1m[32mINSERT INTO "clubs" ("name", "foundation_date", "federation_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Bednar, Aufderhar and Considine"], ["foundation_date", "2009-08-25"], ["federation_id", 1], ["created_at", "2022-06-27 21:33:52.708747"], ["updated_at", "2022-06-27 21:33:52.708747"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mFederation Load (0.3ms)[0m  [1m[34mSELECT "federations".* FROM "federations"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mClub Create (0.5ms)[0m  [1m[32mINSERT INTO "clubs" ("name", "foundation_date", "federation_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Volkman-Auer"], ["foundation_date", "2009-11-12"], ["federation_id", 7], ["created_at", "2022-06-27 21:33:52.712253"], ["updated_at", "2022-06-27 21:33:52.712253"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mFederation Load (0.6ms)[0m  [1m[34mSELECT "federations".* FROM "federations"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mClub Create (0.3ms)[0m  [1m[32mINSERT INTO "clubs" ("name", "foundation_date", "federation_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mayert LLC"], ["foundation_date", "2011-06-06"], ["federation_id", 16], ["created_at", "2022-06-27 21:33:52.716080"], ["updated_at", "2022-06-27 21:33:52.716080"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mFederation Load (0.3ms)[0m  [1m[34mSELECT "federations".* FROM "federations"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mClub Create (0.2ms)[0m  [1m[32mINSERT INTO "clubs" ("name", "foundation_date", "federation_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Runolfsdottir-Hegmann"], ["foundation_date", "2017-07-29"], ["federation_id", 1], ["created_at", "2022-06-27 21:33:52.719378"], ["updated_at", "2022-06-27 21:33:52.719378"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mFederation Load (0.3ms)[0m  [1m[34mSELECT "federations".* FROM "federations"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mClub Create (0.2ms)[0m  [1m[32mINSERT INTO "clubs" ("name", "foundation_date", "federation_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Daniel Inc"], ["foundation_date", "2000-12-07"], ["federation_id", 10], ["created_at", "2022-06-27 21:33:52.722515"], ["updated_at", "2022-06-27 21:33:52.722515"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mClub Create (0.5ms)[0m  [1m[32mINSERT INTO "clubs" ("name", "foundation_date", "federation_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Kirlin-Simonis"], ["foundation_date", "2010-05-17"], ["federation_id", 3], ["created_at", "2022-06-27 21:33:52.725595"], ["updated_at", "2022-06-27 21:33:52.725595"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mClub Create (0.3ms)[0m  [1m[32mINSERT INTO "clubs" ("name", "foundation_date", "federation_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Hackett-Goldner"], ["foundation_date", "2003-01-13"], ["federation_id", 12], ["created_at", "2022-06-27 21:33:52.728857"], ["updated_at", "2022-06-27 21:33:52.728857"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mClub Create (0.3ms)[0m  [1m[32mINSERT INTO "clubs" ("name", "foundation_date", "federation_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Welch, Nader and Wunsch"], ["foundation_date", "2006-09-14"], ["federation_id", 9], ["created_at", "2022-06-27 21:33:52.731997"], ["updated_at", "2022-06-27 21:33:52.731997"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mClub Create (0.2ms)[0m  [1m[32mINSERT INTO "clubs" ("name", "foundation_date", "federation_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Satterfield-Ratke"], ["foundation_date", "2009-05-04"], ["federation_id", 15], ["created_at", "2022-06-27 21:33:52.735476"], ["updated_at", "2022-06-27 21:33:52.735476"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mClub Create (0.2ms)[0m  [1m[32mINSERT INTO "clubs" ("name", "foundation_date", "federation_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Leannon Inc"], ["foundation_date", "2005-09-30"], ["federation_id", 12], ["created_at", "2022-06-27 21:33:52.738592"], ["updated_at", "2022-06-27 21:33:52.738592"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[36mClub Create (0.3ms)[0m  [1m[32mINSERT INTO "clubs" ("name", "foundation_date", "federation_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Hamill-Tremblay"], ["foundation_date", "2014-10-12"], ["federation_id", 21], ["created_at", "2022-06-27 21:33:52.741567"], ["updated_at", "2022-06-27 21:33:52.741567"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFederation Load (0.3ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mClub Create (0.4ms)[0m  [1m[32mINSERT INTO "clubs" ("name", "foundation_date", "federation_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Macejkovic LLC"], ["foundation_date", "2013-11-29"], ["federation_id", 15], ["created_at", "2022-06-27 21:33:52.744957"], ["updated_at", "2022-06-27 21:33:52.744957"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mClub Create (0.4ms)[0m  [1m[32mINSERT INTO "clubs" ("name", "foundation_date", "federation_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Fay-Gulgowski"], ["foundation_date", "2008-03-24"], ["federation_id", 16], ["created_at", "2022-06-27 21:33:52.748242"], ["updated_at", "2022-06-27 21:33:52.748242"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mClub Create (0.3ms)[0m  [1m[32mINSERT INTO "clubs" ("name", "foundation_date", "federation_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Leffler, Pfannerstill and Padberg"], ["foundation_date", "2016-07-12"], ["federation_id", 15], ["created_at", "2022-06-27 21:33:52.751634"], ["updated_at", "2022-06-27 21:33:52.751634"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mFederation Load (0.3ms)[0m  [1m[34mSELECT "federations".* FROM "federations"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mClub Create (0.3ms)[0m  [1m[32mINSERT INTO "clubs" ("name", "foundation_date", "federation_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mayert, Bins and Auer"], ["foundation_date", "2012-07-12"], ["federation_id", 17], ["created_at", "2022-06-27 21:33:52.754924"], ["updated_at", "2022-06-27 21:33:52.754924"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mFederation Load (0.3ms)[0m  [1m[34mSELECT "federations".* FROM "federations"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mClub Create (0.2ms)[0m  [1m[32mINSERT INTO "clubs" ("name", "foundation_date", "federation_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Klein, Mosciski and Hoeger"], ["foundation_date", "2011-09-19"], ["federation_id", 5], ["created_at", "2022-06-27 21:33:52.758233"], ["updated_at", "2022-06-27 21:33:52.758233"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.3ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mPlayer Create (1.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "birth_date", "value", "club_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Pres. Cecil Brakus"], ["birth_date", "2012-06-25"], ["value", 4596], ["club_id", 5], ["created_at", "2022-06-27 21:33:52.769494"], ["updated_at", "2022-06-27 21:33:52.769494"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "birth_date", "value", "club_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Dr. Elfriede White"], ["birth_date", "2019-03-24"], ["value", 5720], ["club_id", 8], ["created_at", "2022-06-27 21:33:52.774300"], ["updated_at", "2022-06-27 21:33:52.774300"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.3ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "birth_date", "value", "club_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Percy Predovic"], ["birth_date", "2000-01-16"], ["value", 8724], ["club_id", 21], ["created_at", "2022-06-27 21:33:52.777870"], ["updated_at", "2022-06-27 21:33:52.777870"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.3ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "birth_date", "value", "club_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Pres. Eloy Yundt"], ["birth_date", "2004-11-05"], ["value", 8234], ["club_id", 8], ["created_at", "2022-06-27 21:33:52.781694"], ["updated_at", "2022-06-27 21:33:52.781694"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "birth_date", "value", "club_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Byron Spencer"], ["birth_date", "2005-05-14"], ["value", 1427], ["club_id", 9], ["created_at", "2022-06-27 21:33:52.785286"], ["updated_at", "2022-06-27 21:33:52.785286"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "birth_date", "value", "club_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Markus Schoen Esq."], ["birth_date", "2017-02-22"], ["value", 1548], ["club_id", 4], ["created_at", "2022-06-27 21:33:52.788963"], ["updated_at", "2022-06-27 21:33:52.788963"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "birth_date", "value", "club_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Linwood Hammes"], ["birth_date", "2005-08-07"], ["value", 7484], ["club_id", 21], ["created_at", "2022-06-27 21:33:52.792563"], ["updated_at", "2022-06-27 21:33:52.792563"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "birth_date", "value", "club_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Jill Lebsack"], ["birth_date", "2013-01-26"], ["value", 3776], ["club_id", 16], ["created_at", "2022-06-27 21:33:52.796347"], ["updated_at", "2022-06-27 21:33:52.796347"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "birth_date", "value", "club_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Sen. Hobert Herzog"], ["birth_date", "2014-10-27"], ["value", 2654], ["club_id", 19], ["created_at", "2022-06-27 21:33:52.800020"], ["updated_at", "2022-06-27 21:33:52.800020"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "birth_date", "value", "club_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Luna Kling II"], ["birth_date", "2016-08-28"], ["value", 7732], ["club_id", 14], ["created_at", "2022-06-27 21:33:52.803561"], ["updated_at", "2022-06-27 21:33:52.803561"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "birth_date", "value", "club_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Valentine Green"], ["birth_date", "2010-03-24"], ["value", 4232], ["club_id", 14], ["created_at", "2022-06-27 21:33:52.807184"], ["updated_at", "2022-06-27 21:33:52.807184"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("name", "birth_date", "value", "club_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Kelsie McKenzie"], ["birth_date", "2007-07-17"], ["value", 6549], ["club_id", 14], ["created_at", "2022-06-27 21:33:52.810660"], ["updated_at", "2022-06-27 21:33:52.810660"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.3ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("name", "birth_date", "value", "club_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Mark Mayert"], ["birth_date", "2019-11-14"], ["value", 4277], ["club_id", 13], ["created_at", "2022-06-27 21:33:52.813921"], ["updated_at", "2022-06-27 21:33:52.813921"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mPlayer Create (0.5ms)[0m  [1m[32mINSERT INTO "players" ("name", "birth_date", "value", "club_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Austin Kerluke"], ["birth_date", "2017-11-10"], ["value", 8385], ["club_id", 9], ["created_at", "2022-06-27 21:33:52.821648"], ["updated_at", "2022-06-27 21:33:52.821648"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.3ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "birth_date", "value", "club_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Dr. Domitila Spinka"], ["birth_date", "2015-09-25"], ["value", 7078], ["club_id", 21], ["created_at", "2022-06-27 21:33:52.825971"], ["updated_at", "2022-06-27 21:33:52.825971"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "birth_date", "value", "club_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Earnestine Daugherty"], ["birth_date", "2011-11-21"], ["value", 5957], ["club_id", 17], ["created_at", "2022-06-27 21:33:52.829444"], ["updated_at", "2022-06-27 21:33:52.829444"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "birth_date", "value", "club_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Sung Roberts LLD"], ["birth_date", "2012-05-25"], ["value", 1643], ["club_id", 21], ["created_at", "2022-06-27 21:33:52.832994"], ["updated_at", "2022-06-27 21:33:52.832994"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "birth_date", "value", "club_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Arnita Schuppe"], ["birth_date", "2016-08-27"], ["value", 3427], ["club_id", 8], ["created_at", "2022-06-27 21:33:52.836618"], ["updated_at", "2022-06-27 21:33:52.836618"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "birth_date", "value", "club_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Dennis Bahringer"], ["birth_date", "2012-10-15"], ["value", 8245], ["club_id", 16], ["created_at", "2022-06-27 21:33:52.840243"], ["updated_at", "2022-06-27 21:33:52.840243"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("name", "birth_date", "value", "club_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Norberto Cormier"], ["birth_date", "2004-07-26"], ["value", 5395], ["club_id", 10], ["created_at", "2022-06-27 21:33:52.843697"], ["updated_at", "2022-06-27 21:33:52.843697"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for ::1 at 2022-06-27 16:34:12 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/mateodelrio/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/railties-7.0.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/mateodelrio/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/railties-7.0.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.8ms | Allocations: 573)
+Completed 200 OK in 6ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 5267)
+
+
+Started GET "/clubs" for ::1 at 2022-06-27 16:34:14 -0500
+Processing by ClubsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/index.html.haml within layouts/application
+  [1m[36mClub Load (0.7ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  ↳ app/views/clubs/index.html.haml:14
+  [1m[36mFederation Load (0.3ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mFederation Load (0.5ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  Rendered clubs/index.html.haml within layouts/application (Duration: 38.6ms | Allocations: 39841)
+  Rendered layout layouts/application.html.erb (Duration: 191.9ms | Allocations: 166929)
+Completed 500 Internal Server Error in 197ms (ActiveRecord: 9.4ms | Allocations: 170162)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery-datatables' with type 'application/javascript'
+Checked in these paths: 
+  /Users/mateodelrio/Desktop/ror/football_repo/app/assets/config
+  /Users/mateodelrio/Desktop/ror/football_repo/app/assets/images
+  /Users/mateodelrio/Desktop/ror/football_repo/app/assets/javascripts
+  /Users/mateodelrio/Desktop/ror/football_repo/app/assets/stylesheets
+  /Users/mateodelrio/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/jquery-datatables-1.10.20/app/assets/images
+  /Users/mateodelrio/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/jquery-datatables-1.10.20/app/assets/javascripts
+  /Users/mateodelrio/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/jquery-datatables-1.10.20/app/assets/media
+  /Users/mateodelrio/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets
+  /Users/mateodelrio/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/jquery-rails-4.5.0/vendor/assets/javascripts
+  /Users/mateodelrio/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/select2-rails-4.0.13/vendor/assets/javascripts
+  /Users/mateodelrio/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/select2-rails-4.0.13/vendor/assets/stylesheets
+  /Users/mateodelrio/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/stimulus-rails-1.0.4/app/assets/javascripts
+  /Users/mateodelrio/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/turbo-rails-1.1.1/app/assets/javascripts
+  /Users/mateodelrio/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/importmap-rails-1.1.2/app/assets/javascripts
+  /Users/mateodelrio/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/actioncable-7.0.3/app/assets/javascripts
+  /Users/mateodelrio/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/actiontext-7.0.3/app/assets/javascripts
+  /Users/mateodelrio/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/actiontext-7.0.3/app/assets/stylesheets
+  /Users/mateodelrio/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/activestorage-7.0.3/app/assets/javascripts
+  /Users/mateodelrio/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/actionview-7.0.3/lib/assets/compiled
+  /Users/mateodelrio/Desktop/ror/football_repo/app/javascript
+  /Users/mateodelrio/Desktop/ror/football_repo/vendor/javascript
+  /Users/mateodelrio/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/jquery-datatables-1.10.20/app/assets/stylesheets
+  /Users/mateodelrio/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/jquery-datatables-1.10.20/app/assets/javascripts
+  /Users/mateodelrio/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/jquery-datatables-1.10.20/app/assets/images):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:     <%= javascript_importmap_tags %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/assets/javascripts/application.js:3
+app/views/layouts/application.html.erb:10
+Started GET "/clubs" for ::1 at 2022-06-27 16:34:35 -0500
+Processing by ClubsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/index.html.haml within layouts/application
+  [1m[36mClub Load (0.3ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  ↳ app/views/clubs/index.html.haml:14
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  Rendered clubs/index.html.haml within layouts/application (Duration: 18.8ms | Allocations: 16885)
+  Rendered layout layouts/application.html.erb (Duration: 132.7ms | Allocations: 60885)
+Completed 200 OK in 134ms (Views: 131.5ms | ActiveRecord: 1.6ms | Allocations: 61158)
+
+
+Started GET "/players" for ::1 at 2022-06-27 16:34:56 -0500
+Processing by PlayersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering players/index.html.haml within layouts/application
+  [1m[36mPlayer Load (0.7ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/views/players/index.html.haml:15
+  [1m[36mClub Load (0.3ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  Rendered players/index.html.haml within layouts/application (Duration: 34.3ms | Allocations: 28480)
+  Rendered layout layouts/application.html.erb (Duration: 38.3ms | Allocations: 32840)
+Completed 200 OK in 43ms (Views: 34.3ms | ActiveRecord: 5.6ms | Allocations: 34783)
+
+
+Started GET "/federations" for ::1 at 2022-06-27 16:35:13 -0500
+Processing by FederationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering federations/index.html.haml within layouts/application
+  [1m[36mFederation Load (0.3ms)[0m  [1m[34mSELECT "federations".* FROM "federations"[0m
+  ↳ app/views/federations/index.html.haml:13
+  Rendered federations/index.html.haml within layouts/application (Duration: 12.4ms | Allocations: 9949)
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 14310)
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.3ms | Allocations: 15146)
+
+
+Started GET "/clubs" for ::1 at 2022-06-27 16:35:23 -0500
+Processing by ClubsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering clubs/index.html.haml within layouts/application
+  [1m[36mClub Load (0.4ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  ↳ app/views/clubs/index.html.haml:14
+  [1m[36mFederation Load (0.3ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mFederation Load (0.3ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mFederation Load (0.1ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mCACHE Federation Load (0.0ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mFederation Load (0.9ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  [1m[36mFederation Load (0.2ms)[0m  [1m[34mSELECT "federations".* FROM "federations" WHERE "federations"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/clubs/index.html.haml:18
+  Rendered clubs/index.html.haml within layouts/application (Duration: 34.4ms | Allocations: 16876)
+  Rendered layout layouts/application.html.erb (Duration: 39.8ms | Allocations: 21277)
+Completed 200 OK in 42ms (Views: 37.4ms | ActiveRecord: 3.1ms | Allocations: 21541)
+
+
+Started GET "/players" for ::1 at 2022-06-27 16:35:33 -0500
+Processing by PlayersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering players/index.html.haml within layouts/application
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/views/players/index.html.haml:15
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.3ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.3ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mCACHE Club Load (0.0ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/players/index.html.haml:20
+  Rendered players/index.html.haml within layouts/application (Duration: 30.7ms | Allocations: 16913)
+  Rendered layout layouts/application.html.erb (Duration: 36.0ms | Allocations: 21283)
+Completed 200 OK in 38ms (Views: 34.1ms | ActiveRecord: 2.6ms | Allocations: 21546)
+
+
