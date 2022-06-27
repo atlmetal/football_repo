@@ -1,0 +1,36 @@
+Arguments: 
+  /Users/mateodelrio/.volta/tools/image/node/14.15.4/bin/node /Users/mateodelrio/.volta/tools/image/yarn/1.22.18/bin/yarn.js add bootrsap jquery popper.js roboto-fontface
+
+PATH: 
+  /Users/mateodelrio/.volta/tools/image/yarn/1.22.18/bin:/Users/mateodelrio/.volta/tools/image/node/14.15.4/bin:/Users/mateodelrio/.volta/bin:/Users/mateodelrio/.rbenv/shims:/Users/mateodelrio/.rbenv/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.22.18
+
+Node version: 
+  14.15.4
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/bootrsap: Not found
+      at Request.params.callback [as _callback] (/Users/mateodelrio/.volta/tools/image/yarn/1.22.18/lib/cli.js:66138:18)
+      at Request.self.callback (/Users/mateodelrio/.volta/tools/image/yarn/1.22.18/lib/cli.js:140883:22)
+      at Request.emit (events.js:315:20)
+      at Request.<anonymous> (/Users/mateodelrio/.volta/tools/image/yarn/1.22.18/lib/cli.js:141855:10)
+      at Request.emit (events.js:315:20)
+      at IncomingMessage.<anonymous> (/Users/mateodelrio/.volta/tools/image/yarn/1.22.18/lib/cli.js:141777:12)
+      at Object.onceWrapper (events.js:421:28)
+      at IncomingMessage.emit (events.js:327:22)
+      at endReadableNT (internal/streams/readable.js:1327:12)
+      at processTicksAndRejections (internal/process/task_queues.js:80:21)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
